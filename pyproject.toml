@@ -21,7 +21,7 @@ dependencies = [
   "channels~=4.2",
   "channels-redis~=4.2",
   "concurrent-log-handler~=0.9.25",
-  "dateparser~=1.2",
+  "dateparser~=1.4",
   # WARNING: django does not use semver.
   #          Only patch versions are guaranteed to not introduce breaking changes.
   "django~=5.2.13",
@@ -33,7 +33,7 @@ dependencies = [
   "django-cors-headers~=4.9.0",
   "django-extensions~=4.1",
   "django-filter~=25.1",
-  "django-guardian~=3.3.0",
+  "django-guardian~=3.3.2",
   "django-multiselectfield~=1.0.1",
   "django-rich~=2.2.0",
   "django-soft-delete~=1.0.18",
@@ -48,15 +48,15 @@ dependencies = [
   "flower~=2.0.1",
   "gotenberg-client~=0.14.0",
   "httpx-oauth~=0.16",
-  "ijson>=3.2",
+  "ijson>=3.5.1",
   "imap-tools~=1.11.0",
   "jinja2~=3.1.5",
   "langdetect~=1.0.9",
-  "llama-index-core>=0.14.12",
+  "llama-index-core>=0.14.23",
   "llama-index-embeddings-huggingface>=0.6.1",
   "llama-index-embeddings-openai>=0.5.1",
   "llama-index-llms-ollama>=0.9.1",
-  "llama-index-llms-openai>=0.6.13",
+  "llama-index-llms-openai>=0.7.9",
   "llama-index-vector-stores-faiss>=0.5.2",
   "nltk~=3.9.1",
   "ocrmypdf~=17.4.0",
@@ -68,7 +68,7 @@ dependencies = [
   "python-gnupg~=0.5.4",
   "python-ipware~=3.0.0",
   "python-magic~=0.4.27",
-  "rapidfuzz~=3.14.0",
+  "rapidfuzz~=3.14.5",
   "redis[hiredis]~=5.2.1",
   "regex>=2025.9.18",
   "scikit-learn~=1.8.0",
@@ -89,7 +89,7 @@ postgres = [
   "psycopg[c,pool]==3.3",
   # Direct dependency for proper resolution of the pre-built wheels
   "psycopg-c==3.3",
-  "psycopg-pool==3.3",
+  "psycopg-pool==3.3.1",
 ]
 webserver = [
   "granian[uvloop]~=2.7.0",
@@ -102,11 +102,11 @@ dev = [
   { include-group = "testing" },
 ]
 docs = [
-  "zensical>=0.0.21",
+  "zensical>=0.0.47",
 ]
 lint = [
   "prek~=0.3.0",
-  "ruff~=0.15.0",
+  "ruff~=0.15.20",
 ]
 testing = [
   "daphne",
